@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gastrofind/components/category_item.dart';
+
+import '../components/category_item.dart';
 
 import '../data/dummy_data.dart';
 
@@ -20,7 +21,7 @@ class CategoriesScreen extends StatelessWidget {
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
         ),
-        children: DUMMY_CATEGORIES.map((category) {
+        children: dummyCategories.map((category) {
           return CategoryItem(category);
         }).toList(),
       ),
